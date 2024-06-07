@@ -1,0 +1,85 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.8) 100%);
+    backdrop-filter: blur(10px); /* Optional: for a frosted glass effect */
+}
+.container {
+    position: relative;
+}
+
+.teddy {
+    position: absolute;
+    top: -25px; /* Adjust this value to move the teddy bear up or down */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px; /* Adjust the size as needed */
+    z-index: -8; /* Ensure the teddy is above the rainbow */
+}
+.rainbow {
+    position: relative;
+    width: 600px;
+    height: 200px;
+}
+
+.arc {
+    position: absolute;
+    bottom: 100;
+    width: 100%;
+    border-radius:  50% 50%;
+    transform: translateY(50%);
+    /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); */
+}
+
+.red {
+    background-color: rgba(255, 0, 0, 0.6); /* Semi-transparent red */
+    z-index: -7;
+    height: 100%;
+}
+
+.orange {
+    background-color: rgba(255, 165, 0, 0.6); /* Semi-transparent orange */
+    z-index: -6;
+    height: 85%;
+    top: 7.5%;
+}
+
+.yellow {
+    background-color: rgba(255, 255, 0, 0.6); /* Semi-transparent yellow */
+    z-index: -5;
+    height: 70%;
+    top: 15%;
+}
+
+.green {
+    background-color: rgba(0, 128, 0, 0.6); /* Semi-transparent green */
+    z-index: -4;
+    height: 55%;
+    top: 22.5%;
+}
+
+.blue {
+    background-color: rgba(0, 0, 255, 0.6); /* Semi-transparent blue */
+    z-index: -3;
+    height: 40%;
+    top: 30%;
+}
+
+.indigo {
+    background-color: rgba(75, 0, 130, 0.6); /* Semi-transparent indigo */
+    z-index: -2;
+    height: 25%;
+    top: 37.5%;
+}
+
+.violet {
+    background-color: rgba(238, 130, 238, 0.6); /* Semi-transparent violet */
+    z-index: -1;
+    height: 10%;
+    top: 45%;
+}
+
